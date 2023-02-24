@@ -24,9 +24,14 @@ $$ E(X) = \sum_{i=1}^n P(X_i) X_i $$
 
 Weighted average of the outcomes: 
 
-$$E(X) = P(X=1) \times 1 \ + P(X=0) \times 0$$
-$$E(X) = p \times 1 + (1-p) \times 0 $$
-$$E(X) = p $$
+$$
+\begin{aligned}
+E(X) = P(X=1) \times 1 \ + P(X=0) \times 0 \\
+E(X) = p \times 1 + (1-p) \times 0 \\
+E(X) = p 
+\end{aligned}
+$$
+
 
 
 
@@ -44,42 +49,27 @@ $$E(X) = p $$
 ---
 
 with the mean, we can compute the Bernouli distribution **`Variance`**. It is the difference between the expected mean of $X^2$ and the expected mean squared:
- $$ Var(X) = E(X^2) - E(X)^2$$
 
-$$ \rightarrow E(X^2) = P(X=1) \times 1^2 \ + P(X=0) \times 0^2 $$
-$$ \rightarrow E(X^2)= p \times 1 + (1-p) \times 0 $$
-$$ \rightarrow E(X^2) = p $$
-$$ Var(X) = p - E(X)^2$$
-$$ Var(X) = p - p^2 $$
-$$ Var(X) = p(1-p) = pq $$
+$$ Var(X) = E(X^2) - E(X)^2$$
 
 
-
-
----
+$$
+\begin{aligned}
+E(X^2) = P(X=1) \times 1^2 \ + P(X=0) \times 0^2\\
+\rightarrow E(X^2)=p \times 1 + (1-p) \times 0 \\
+\rightarrow E(X^2)=p
+\end{aligned}
+$$
 
 
 
-
-
-
-
-
-$$ 1 \le -999 \ ?\ ?\ ?\ ?\ ?\ ? $$
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$$
+\begin{aligned}
+Var(X) = p - E(X)^2 \\
+Var(X) = p - p^2 \\
+Var(X) = p(1-p) = pq
+\end{aligned}
+$$
 
 
 
@@ -92,6 +82,16 @@ $$ 1 \le -999 \ ?\ ?\ ?\ ?\ ?\ ? $$
 
 # Syntax examples
 
+
+$$
+\begin{aligned}
+y_j \sim N(\theta_j , \sigma_j^2) \\
+\sigma_j = \nu/\sqrt{n_j}   \\
+\theta = \mu ^{\tau \times \eta} \\
+\eta \sim N(0,1) \\
+\mu + \tau\times\eta = \theta \sim N(\mu , \tau^2)
+\end{aligned}
+$$
 
 ```
 $$ \mathbb{E}[X] = \sum_{i=1}^{n} x_i \cdot p_i $$
@@ -119,6 +119,19 @@ $$ \mathbb{E}[X] = \frac{1}{n} \sum_{i=1}^{n} x_i $$
 $$ \mathbb{E}[X] = \int_{-\infty}^{\infty} x \, dF(x) $$
 
 
+
+---
+
+$multi-line$
+
+$block1$
+
+$$
+\begin{aligned}
+multi-line \\
+block \ 2 \ here
+\end{aligned}
+$$
 
 
 
